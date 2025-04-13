@@ -5,7 +5,9 @@
   "main": "index.html",
   "scripts": {
     "build": "tsc",
-    "dev": "tsc -w & http-server -c-1"
+    "start": "webpack serve --mode=development",
+    "dev": "tsc -w & http-server -c-1",
+    "lint": "eslint . --ext .ts"
   },
   "keywords": [
     "web-components",
@@ -15,7 +17,15 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "http-server": "^14.1.1",
-    "typescript": "^5.0.0"
+    "@eslint/js": "^9.22.0",
+    "eslint": "^9.22.0",
+    "globals": "^16.0.0",
+    "husky": "^9.1.7",
+    "ts-loader": "^9.5.2",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.27.0",
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.0"
   }
 }
