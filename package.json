@@ -1,0 +1,21 @@
+{
+  "name": "dog-breeds-gallery",
+  "version": "1.0.0",
+  "description": "A web component gallery for dog breeds",
+  "main": "index.html",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w & http-server -c-1"
+  },
+  "keywords": [
+    "web-components",
+    "typescript",
+    "dogs"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "typescript": "^5.0.0"
+  }
+}
